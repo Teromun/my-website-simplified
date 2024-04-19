@@ -280,4 +280,8 @@ li {
     grid-template-columns: 1fr;
     grid-template-rows: 150px 200px 250px;
     }
+
+    .contact ul, input {
+    margin-left: 5px;
+}
 }

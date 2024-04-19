@@ -139,7 +139,6 @@ h2 {
     font-size: 1.5em;
 }
 .hello h4 {
-    font-family: "Permanent Marker", cursive;
     font-size: 1.3em;
     color: rgb(85, 85, 85);
     font-style: italic;
@@ -155,6 +154,10 @@ h2 {
 
 h3 {
     font-size: 1.5em;
+}
+
+h4 {
+    font-family: 'Oswald', sans-serif;
 }
 
 .cv {
@@ -209,7 +212,7 @@ h3 {
     padding-left: 30%;
 }
 @media screen and (max-width: 1050px) {
-    .panic{
+    .panic {
         display: none;
     }
 }
@@ -275,13 +278,46 @@ li {
         width: fit-content;
     }
 
+    .accueil, .intro_cv, .contact {
+        margin-top: 5px;
+        padding-top: 15px;
+    }
     .accueil {
-    gap: 5px;
+    gap: 25px;
     grid-template-columns: 1fr;
     grid-template-rows: 150px 200px 250px;
     }
 
-    .contact ul, input {
-    margin-left: 5px;
-}
+    .cv {
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 450px 80px 250px 80px 300px 50px;
+        margin: 5px;
+    }
+    .exp {
+        grid-row: 2;
+    }
+    .form_h {
+        grid-row: 3;
+    }
+    .form {
+        grid-row: 4;
+    }
+    .compet_h {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .compet {
+        grid-column: 1;
+        grid-row: 6;
+    }
+    .cv_papier {
+        grid-row: 7;
+    }
+
+    .contact {
+        margin-left: 5px;
+        & ul, p, h1, h2 {
+            margin-left: 0;
+        }
+    }
 }

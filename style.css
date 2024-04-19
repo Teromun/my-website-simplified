@@ -260,7 +260,7 @@ li {
 /*MOBILE*/
 @media all and (max-width: 600px) {
     header {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 }
 
@@ -270,13 +270,17 @@ li {
         padding: 0;
     }
     header {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap:wrap-reverse;
         gap: 5px;
     }
     header a {
-        margin-left: auto;
-        width: fit-content;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 10px;
     }
+
 
     .accueil, .intro_cv, .contact {
         margin-top: 5px;

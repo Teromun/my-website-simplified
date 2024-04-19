@@ -253,3 +253,31 @@ h3 {
 li {
     color: #b96c82;
 }
+
+/*MOBILE*/
+@media all and (max-width: 600px) {
+    header {
+        font-size: 1.5em;
+    }
+}
+
+@media all and (max-width: 450px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        flex-direction: column;
+        gap: 5px;
+    }
+    header a {
+        margin-left: auto;
+        width: fit-content;
+    }
+
+    .accueil {
+    gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 200px 250px;
+    }
+}

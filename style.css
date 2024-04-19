@@ -59,7 +59,7 @@ main a {
     }
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
     font-family: "Permanent Marker", cursive;
 }
 
@@ -139,6 +139,7 @@ h2 {
     font-size: 1.5em;
 }
 .hello h4 {
+    font-family: "Permanent Marker", cursive;
     font-size: 1.3em;
     color: rgb(85, 85, 85);
     font-style: italic;
